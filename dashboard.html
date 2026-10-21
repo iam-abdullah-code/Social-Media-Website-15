@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectDev - Social Media Dashboard</title>
+    <div style="background: #fff3cd; color: #856404; padding: 10px; text-align: center; font-size: 14px; border-bottom: 1px solid #ffeeba;">
+    <strong>Academic Student Assignment:</strong> This is a non-commercial educational project for learning purposes and has no affiliation with any official company or brand.
+</div>
+    <!-- Educational Student Practice Project Only -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+
+    <div class="disclaimer-banner">
+        ⚠️ ConnectDev - Student Practice Project for Web Development & UI Layouts
+    </div>
+
+  
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="#" class="logo">ConnectDev</a>
+            <div class="search-box">
+                <input type="text" placeholder="Search ConnectDev...">
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <div class="nav-tab active">🏠</div>
+            <div class="nav-tab">👥</div>
+            <div class="nav-tab">📺</div>
+            <div class="nav-tab">🎮</div>
+        </div>
+
+        <div class="nav-right">
+            <div class="user-chip">
+                <div class="avatar-sm" style="background-color: #1877f2;">AN</div>
+                <span>Ali Naeem</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Body Container -->
+    <main class="dashboard-container">
+
+        <!-- Left Navigation Sidebar -->
+        <aside class="sidebar-left">
+            <div class="menu-list">
+                <a href="#" class="menu-item">👤 Profile</a>
+                <a href="#" class="menu-item">📰 News Feed</a>
+                <a href="#" class="menu-item">👥 Friends</a>
+                <a href="#" class="menu-item">👨‍👩‍👧‍👦 Groups</a>
+                <a href="#" class="menu-item">🔖 Saved Posts</a>
+                <a href="#" class="menu-item">⚙️ Settings</a>
+            </div>
+        </aside>
+
+        <section class="feed-area">
+
+          
+            <div class="stories-container">
+                <div class="story-card create-story">
+                    <div class="plus-btn">+</div>
+                    <span style="font-size: 12px; font-weight: 600;">Create Story</span>
+                </div>
+                <div class="story-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.6), transparent), url('https://picsum.photos/200/300?random=1');">
+                    <span class="story-author">Hamza Khan</span>
+                </div>
+                <div class="story-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.6), transparent), url('https://picsum.photos/200/300?random=2');">
+                    <span class="story-author">Usman Ahmed</span>
+                </div>
+                <div class="story-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.6), transparent), url('https://picsum.photos/200/300?random=3');">
+                    <span class="story-author">Bilal Raza</span>
+                </div>
+            </div>
+
+           
+            <div class="create-post-card">
+                <div class="post-input-wrapper">
+                    <div class="avatar-sm" style="background-color: #1877f2;">AN</div>
+                    <textarea placeholder="What's on your mind, Ali?"></textarea>
+                </div>
+                <div class="post-options">
+                    <button class="option-btn">📷 Photo/Video</button>
+                    <button class="option-btn">🏷️ Tag Friends</button>
+                    <button class="btn-submit">Post</button>
+                </div>
+            </div>
+
+            <article class="post-card">
+                <div class="post-header">
+                    <div class="author-info">
+                        <div class="avatar-sm" style="background-color: #2e7d32;">HK</div>
+                        <div>
+                            <div class="author-name">Hamza Khan</div>
+                            <div class="post-time">2 hours ago</div>
+                        </div>
+                    </div>
+                    <span style="cursor: pointer; color: var(--text-secondary);">•••</span>
+                </div>
+
+                <div class="post-content">
+                    Completed our frontend layout using pure HTML & CSS grid today! Next step is attaching JavaScript DOM logic. 🚀
+                </div>
+
+                <div class="post-stats">
+                    <span>👍 12 Likes</span>
+                    <span>3 Comments</span>
+                </div>
+
+                <div class="post-actions">
+                    <button class="action-btn">👍 Like</button>
+                    <button class="action-btn">💬 Comment</button>
+                    <button class="action-btn">🔄 Share</button>
+                </div>
+
+                <div class="comments-section">
+                    <div class="comment-input-box">
+                        <div class="avatar-sm" style="background-color: #1877f2;">AN</div>
+                        <input type="text" placeholder="Write a comment...">
+                    </div>
+                </div>
+            </article>
+
+            
+            <article class="post-card">
+                <div class="post-header">
+                    <div class="author-info">
+                        <div class="avatar-sm" style="background-color: #d81b60;">UA</div>
+                        <div>
+                            <div class="author-name">Usman Ahmed</div>
+                            <div class="post-time">5 hours ago</div>
+                        </div>
+                    </div>
+                    <span style="cursor: pointer; color: var(--text-secondary);">•••</span>
+                </div>
+
+                <div class="post-content">
+                    Designing clean web interfaces without relying too heavily on CSS frameworks!
+                </div>
+
+                <img src="https://picsum.photos/600/300?random=4" alt="Post media" class="post-image">
+
+                <div class="post-stats">
+                    <span>👍 28 Likes</span>
+                    <span>8 Comments</span>
+                </div>
+
+                <div class="post-actions">
+                    <button class="action-btn">👍 Like</button>
+                    <button class="action-btn">💬 Comment</button>
+                    <button class="action-btn">🔄 Share</button>
+                </div>
+            </article>
+
+        </section>
+
+        
+        <aside class="sidebar-right">
+            <div class="widget-box">
+                <div class="section-title">Online Friends</div>
+                
+                <div class="friend-contact">
+                    <div class="status-dot"></div>
+                    <div class="avatar-sm" style="background-color: #2e7d32;">HK</div>
+                    <span style="font-size: 14px; font-weight: 500;">Hamza Khan</span>
+                </div>
+
+                <div class="friend-contact">
+                    <div class="status-dot"></div>
+                    <div class="avatar-sm" style="background-color: #d81b60;">UA</div>
+                    <span style="font-size: 14px; font-weight: 500;">Usman Ahmed</span>
+                </div>
+
+                <div class="friend-contact">
+                    <div class="status-dot"></div>
+                    <div class="avatar-sm" style="background-color: #f57c00;">BR</div>
+                    <span style="font-size: 14px; font-weight: 500;">Bilal Raza</span>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+</body>
+</html>

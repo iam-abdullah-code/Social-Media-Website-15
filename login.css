@@ -1,0 +1,277 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 1120px;
+            min-height: 85vh;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            overflow: hidden;
+        }
+
+        /* Left Section: Custom Graphics Collage */
+        .left-box {
+            flex: 1.1;
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+        }
+
+        .fb-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Custom Pure CSS Photo Collage */
+        .collage-container {
+            position: relative;
+            width: 100%;
+            max-width: 380px;
+            height: 280px;
+            margin: 30px auto;
+        }
+
+        .card-main {
+            position: absolute;
+            width: 240px;
+            height: 220px;
+            top: 10px;
+            left: 30px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            transform: rotate(-3deg);
+            border: 4px solid #ffffff;
+        }
+
+        .card-main img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-secondary {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            bottom: 0px;
+            right: 20px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+            transform: rotate(4deg);
+            border: 4px solid #ffffff;
+        }
+
+        .card-secondary img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .floating-avatar {
+            position: absolute;
+            bottom: -10px;
+            left: 100px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            overflow: hidden;
+            z-index: 3;
+        }
+
+        .floating-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .floating-badge {
+            position: absolute;
+            top: 0px;
+            right: 120px;
+            background: #ffffff;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 18px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            z-index: 4;
+        }
+
+        .hero-title {
+            font-size: 46px;
+            font-weight: 800;
+            color: #1c1e21;
+            line-height: 1.15;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-title .blue-text {
+            color: #0866ff;
+        }
+
+        /* Right Section: Form */
+        .right-box {
+            flex: 0.9;
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid #edf0f5;
+        }
+
+        .form-card {
+            width: 100%;
+            max-width: 360px;
+            text-align: center;
+        }
+
+        .form-card h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1c1e21;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .input-group {
+            margin-bottom: 14px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px 18px;
+            font-size: 15px;
+            border: 1px solid #dcdfe6;
+            border-radius: 12px;
+            outline: none;
+            background-color: #fafafa;
+            transition: all 0.2s ease;
+        }
+
+        .input-group input:focus {
+            background-color: #ffffff;
+            border-color: #0866ff;
+            box-shadow: 0 0 0 3px rgba(8, 102, 255, 0.15);
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 14px;
+            background-color: #0866ff;
+            color: #ffffff;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-login:hover {
+            background-color: #0052cc;
+        }
+
+        .link-forgot {
+            display: inline-block;
+            margin-top: 20px;
+            color: #1c1e21;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .link-forgot:hover {
+            text-decoration: underline;
+        }
+
+        .btn-create {
+            display: block;
+            margin-top: 35px;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #0866ff;
+            border-radius: 25px;
+            color: #0866ff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn-create:hover {
+            background-color: #f0f7ff;
+        }
+
+        .meta-brand {
+            margin-top: 45px;
+            color: #0866ff;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 880px) {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            .right-box {
+                border-left: none;
+                border-top: 1px solid #edf0f5;
+                padding: 40px 20px;
+            }
+
+            .left-box {
+                padding: 30px 20px;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .collage-container {
+                height: 230px;
+            }
+
+            .card-main {
+                width: 190px;
+                height: 170px;
+                left: 10px;
+            }
+
+            .card-secondary {
+                width: 120px;
+                height: 120px;
+            }
+        }
